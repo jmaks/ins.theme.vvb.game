@@ -36,7 +36,6 @@ require "para"
 -- require "sound"
 -- require "theme"
 
-
 dofile ('parser/metaparser.lua');
 input.cursor = img 'theme/cursor.gif';
 morph.debug = true;
@@ -92,7 +91,7 @@ main = room { nam = "Тестовая комната",
     obj = {
         -- some objs,
         'tobj',
-        vobj('null', 'В данной комнате лежит null и тест.')
+        vobj('null', 'В данной комнате лежит {null} и тест.')
     },
     way = {
         -- some ways,
@@ -104,6 +103,7 @@ main = room { nam = "Тестовая комната",
 
 tobj = obj
 {
+--    nam = 'test',
     nam = _'тест',
     Exam = function (s)
             p [[ v.v.b. можешь использовать эту тему на свое усмотрение, считай
