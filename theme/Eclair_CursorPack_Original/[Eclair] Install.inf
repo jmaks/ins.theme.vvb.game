@@ -1,0 +1,58 @@
+; ECLAIR
+; [ Cursor Set ]
+
+; © MAGNUMHEART PRODUCTIONS
+
+; Right click on this file ("[Eclair]Install.inf") then Select "Install"
+
+[Version]
+signature="$CHICAGO$"
+
+[DefaultInstall]
+CopyFiles = Scheme.Cur
+AddReg    = Scheme.Reg
+
+[DestinationDirs]
+Scheme.Cur = 10,"%CUR_DIR%"
+Scheme.Txt = 10,"%CUR_DIR%"
+
+[Scheme.Reg]
+HKCU,"Control Panel\Cursors\Schemes","%SCHEME_NAME%",,"%10%\%CUR_DIR%\%pointer%,%10%\%CUR_DIR%\%help%,%10%\%CUR_DIR%\%work%,%10%\%CUR_DIR%\%busy%,%10%\%CUR_DIR%\%cross%,%10%\%CUR_DIR%\%text%,%10%\%CUR_DIR%\%hand%,%10%\%CUR_DIR%\%unavailable%,%10%\%CUR_DIR%\%Vert%,%10%\%CUR_DIR%\%Horz%,%10%\%CUR_DIR%\%Dgn1%,%10%\%CUR_DIR%\%Dgn2%,%10%\%CUR_DIR%\%move%,%10%\%CUR_DIR%\%alternate%,%10%\%CUR_DIR%\%link%"
+
+; Installed files
+
+[Scheme.Cur]
+Eclair-alter.ani
+Eclair-pointer.cur
+Eclair-background.ani
+Eclair-busy.ani
+Eclair-blocked.ani
+Eclair-help.ani
+Eclair-hand.ani
+Eclair-move.ani
+Eclair-pen.cur
+Eclair-precision.ani
+Eclair-resizeNESW.ani
+Eclair-resizeNWSE.ani
+Eclair-text.cur
+Eclair-resizeV.ani
+Eclair-resizeH.ani
+
+[Strings]
+CUR_DIR = "Cursors\Eclair [MAGNUMHEART]"
+SCHEME_NAME = "Eclair"
+pointer = "Eclair-pointer.cur"
+help = "Eclair-help.ani"
+work = "Eclair-background.ani"
+busy = "Eclair-busy.ani"
+text = "Eclair-text.cur"
+unavailable = "Eclair-blocked.ani"
+vert = "Eclair-resizeV.ani"
+horz = "Eclair-resizeH.ani"
+dgn1 = "Eclair-resizeNWSE.ani"
+dgn2 = "Eclair-resizeNESW.ani"
+move = "Eclair-move.ani"
+link = "Eclair-hand.ani"
+cross = "Eclair-precision.ani"
+hand = "Eclair-pen.cur"
+alternate = "Eclair-alter.ani"
